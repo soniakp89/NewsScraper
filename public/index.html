@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>All the News that Fit to Scrape!!!!</title>
+    <style>
+      body { background-color: rgb(173, 24, 44) }
+      #wrapper {
+        width: 960px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      #articles {
+        display: inline-block;
+        overflow: auto;
+        width: 60%;
+        height: 700px;
+      }
+      #notes {
+        float: center;
+        width: 50%;
+      }
+      textarea, input {
+        display: block;
+        width: 100%;
+        background-color: rgb(165, 127, 202);
+      }
+      input {
+        height: 36px;
+        font-size: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <h1>News Scraper</h1>
+      <a href="/scrape" id="btn-scrape">1. Scrape</a>
+      <a href="/articles" id="btn-articles">2. Articles</a>
+
+      <div id="articles"></div>
+
+      <div id="notes"></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="public/app.js"></script>
+  </body>
+</html>
